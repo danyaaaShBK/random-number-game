@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Forum;
+}
+
+:root {
+  --index: calc(1vh + 1vw);
+}
+
+body {
+  background-image: url(/img/176447-otrazhenie-ozero_arlekin-oblako-voda-gora-3840x2160.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: calc(var(--index) * 40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: calc(var(--index));
+  padding: 40px;
+  border-radius: calc(var(--index) * 1.8);
+  box-shadow: 2px 2px 5px #030303;
+  opacity: .98;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+  font-size: calc(var(--index) * 2);
+  margin-bottom: 30px;
+}
+
+.heading__text {
+  font-size: calc(var(--index) * .9);
+}
+
+.game__container {
+  width: 100%;
+  font-size: calc(var(--index));
+}
+
+.game__container .guessSubmit {
+  font-size: calc(var(--index) * .7);
+  background-color: rgb(255, 138, 138);
+  padding: calc(var(--index) * 0.1) calc(var(--index) * 0.5);
+  border: 2px solid rgb(255, 94, 94);
+  border-radius: calc(var(--index));
+  color: #fff;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.game__container .guessSubmit:hover {
+  border: 2px solid rgb(255, 85, 85);
+  background-color: rgb(255, 123, 123);
+  color: rgb(255, 233, 233);;
+}
+
+.game__container .guessSubmit:active {
+  border: 2px solid rgb(255, 72, 72);
+  background-color: rgb(255, 102, 102);
+  color: #ffd2d2;
+}
+
+.game__container .guessSubmit:disabled {
+  border: 2px solid rgb(109, 109, 109);
+  background-color: rgb(189, 189, 189);
+  color: #000000;
+  cursor: auto;
+}
+
+.guessField {
+  padding: calc(var(--index) * .2) calc(var(--index) * .4);
+  border: 1.5px solid #570000;
+  border-radius: calc(var(--index));
+  font-size: calc(var(--index) * .7);
+  margin-bottom: calc(var(--index));
+}
+
+.guessField:disabled {
+  border: 2px solid rgb(206, 206, 206);
+  background-color: rgb(230, 230, 230);
+  color: #000000;
+}
+
+.resultParas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(var(--index) * .3);
+  margin-bottom: calc(var(--index));
+}
+
+.last__result {
+  padding: calc(var(--index) * .2) calc(var(--index) * .5);
+  color: #fff;
+  font-family: Roboto;
+  border-radius: calc(var(--index) * .7);
+}
+
+.game__container button {
+  background-color: #fff0d1;
+  border: 1px solid #a16c00;
+  border-radius: calc(var(--index));
+  padding: calc(var(--index) * .2) calc(var(--index) * .5);
+  color: #47433b;
+  font-size: calc(var(--index));
+  cursor: pointer;
+  transition: .3s;
+}
+
+.game__container button:hover {
+  background-color: rgb(255, 232, 186);
+  border: 1px solid #885b00;
+}
+
+.game__container button:active {
+  background-color: rgb(255, 222, 155);
+  border: 1px solid #885b00;
+}
