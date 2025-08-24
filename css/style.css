@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(/img/176447-otrazhenie-ozero_arlekin-oblako-voda-gora-3840x2160.jpg);
+  background-image: url(img/176447-otrazhenie-ozero_arlekin-oblako-voda-gora-3840x2160.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -128,4 +128,126 @@ h1 {
 .game__container button:active {
   background-color: rgb(255, 222, 155);
   border: 1px solid #885b00;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    row-gap: calc(var(--index) * .7);
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: calc(var(--index) * 2.5);
+  }
+
+  .heading__text {
+    font-size: calc(var(--index) * 1.1);
+  }
+
+  .game__container {
+    font-size: calc(var(--index) * 1.2);
+  }
+
+  .game__container .guessSubmit {
+    padding: calc(var(--index) * 0.3) calc(var(--index) * 0.7);
+    font-size: calc(var(--index) * .9);
+  }
+
+  .guessField {
+    padding: calc(var(--index) * .4) calc(var(--index) * .6);
+    font-size: calc(var(--index) * .9);
+  }
+
+  .resultParas {
+    margin-bottom: calc(var(--index) * .7);
+  }
+
+  .game__container button {
+    padding: calc(var(--index) * .4) calc(var(--index) * .7);
+    font-size: calc(var(--index) * 1.2);
+    border-radius: calc(var(--index) * 1.3);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(var(--index) * 2.7);
+  }
+
+  .heading__text {
+    font-size: calc(var(--index) * 1.3);
+  }
+
+  .game__container {
+    font-size: calc(var(--index) * 1.4);
+  }
+
+  .game__container .guessSubmit {
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 0.9);
+    font-size: calc(var(--index) * 1.1);
+    border-radius: calc(var(--index) * 1.5);
+  }
+
+  .guessField {
+    padding: calc(var(--index) * .6) calc(var(--index) * .8);
+    font-size: calc(var(--index) * 1.1);
+    border-radius: calc(var(--index) * 1.5);
+  }
+
+  .resultParas {
+    margin-bottom: calc(var(--index) * .7);
+  }
+
+  .game__container button {
+    padding: calc(var(--index) * .6) calc(var(--index) * .9);
+    font-size: calc(var(--index) * 1.4);
+    border-radius: calc(var(--index) * 1.5);
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    row-gap: calc(var(--index) * 1.5);
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: calc(var(--index) * 2.7);
+    margin-bottom: 10px;
+  }
+
+  .heading__text {
+    font-size: calc(var(--index) * 1.3);
+  }
+
+  .game__container {
+    font-size: calc(var(--index) * 1.4);
+  }
+
+  .game__container .guessSubmit {
+    padding: calc(var(--index) * 0.3) calc(var(--index) * 0.7);
+    font-size: calc(var(--index) * 1.1);
+    margin-top: 3px;
+  }
+
+  .guessField {
+    padding: calc(var(--index) * .6) calc(var(--index) * .8);
+    font-size: calc(var(--index) * .6);
+  }
+
+  .resultParas {
+    margin-bottom: calc(var(--index) * .7);
+  }
+
+  .game__container button {
+    padding: calc(var(--index) * .6) calc(var(--index) * .9);
+    font-size: calc(var(--index) * 1.6);
+    border-radius: calc(var(--index) * 1.5);
+  }
+}
+
+@media (pointer: coarse) { 
+  .gb-container { 
+    background-attachment: initial !important; 
+  } 
 }
