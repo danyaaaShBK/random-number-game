@@ -62,6 +62,7 @@ function resetGame() {
   guessSubmit.disabled = false;
   guessField.value = "";
   guessField.focus();
+  lastResult.style.background = "white";
 
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
